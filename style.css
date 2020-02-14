@@ -1,0 +1,486 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(201, 201, 201);
+    width: 100%;
+    height: 100vh;
+}
+.nav{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px dotted peru ;
+    background-color: rgb(0, 0, 0,0.5);
+    position: fixed;
+}
+.logo{
+    width: 300px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 18px;
+    float: left;
+    color: aquamarine;
+    font-family: 'Righteous', cursive;
+}
+.logo h1{
+    font-size: 40px;
+    background-image: conic-gradient(from -180deg at 30% 55%,rgb(119, 255, 203) 0deg,rgb(83, 255, 226) 90deg,rgb(243, 135, 47) 90deg,yellow 180deg,green 180deg,rgb(53, 196, 160) 270deg,pink 270deg,rgb(123, 191, 194) 360deg);
+    font-family: 'Righteous', cursive; 
+    background-clip: text; 
+    -webkit-background-clip: text;
+    color: transparent;
+}
+ ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+ul li{
+    display: inline-block;
+    padding: 7px;
+    margin-left: 10px;
+    border-radius: 4px;
+    transition: ease 1s all;
+    border: 1px solid rgb(89, 230, 255);
+}
+ ul li a{
+    text-decoration: none;
+    font-family: monospace;
+    font-size: large;
+    color: rgb(135, 217, 223);
+}
+ul li:hover{
+    background-color: rgb(180, 180, 180);
+}
+span{
+    float: right;
+    cursor: pointer;
+    margin-top: 12px;
+    font-size: 30px;
+    margin-right: 50px;
+    display: none;
+    color: rgb(67, 249, 255);
+}
+.contant{
+    padding-top: 150px;
+    text-align: center;
+    color: gray;
+}
+.contant a{
+    margin-left: 50px;
+    padding: 12px;
+    background-color: rgb(111, 194, 197);
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10%;
+    transition: ease 2s all;
+}
+.contant a:hover{
+    background-color: rgb(0, 255, 242);
+    color: white;
+    border: 1px solid tomato;
+}
+.socialicon{
+    width: 100px;
+    float: left;
+    position: fixed;
+    margin-top: -100px;
+}
+.socialicon .i1{
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.socialicon .i1 i{
+    background-color: white;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.socialicon .i1:hover{
+    transform: rotateX(360deg);
+    transition: ease 0.5s all;
+}
+.socialicon .fa-facebook-square{
+    color: blue;
+}
+.socialicon .fa-youtube-square{
+    color: red;
+}
+.socialicon .fa-twitter-square{
+    color: rgb(0, 225, 255);
+}
+.socialicon .fa-linkedin-square{
+    color: rgb(46, 148, 243);
+}
+.priceing{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.priceing .pri{
+    display: inline-block;
+    width: 20%;
+    height: 300px;
+    background-color: white;
+    margin-left: 73px;
+    text-align: center;
+    border-top-left-radius: 20%;
+    transition: ease 5s all;
+    border-bottom-left-radius: 22%;
+    border-top-right-radius: 10px;
+    font-family: monospace;
+}
+.priceing .pri1{
+    border-bottom-left-radius: 22%;
+    border-top-right-radius: 10px;
+    font-family: monospace;
+} 
+.priceing a{
+    text-decoration: none;
+    padding: 7px;
+    border: 1px solid tomato;
+    transition: ease 2s all;
+    border-radius: 2px;
+}
+.priceing a:hover{
+    background-color: gray;
+    color: white;
+}
+.priceing img{
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 10px;
+}
+.priceing .pri1{
+    display: inline-block;
+    width: 20%;
+    height: 300px;
+    background-color: white;
+    margin-left: 73px;
+    text-align: center;
+    border-top-left-radius: 20%;
+    transition: ease 5s all;
+}
+.priceing .pri:hover{
+    box-shadow: 5px 5px rgb(158, 153, 148);
+}
+.gallery{
+    margin-top: 100px;
+    margin-left: 80px;
+}
+.gallery h1{
+    text-align: center;
+    color: rgb(116, 116, 116);
+}
+.gallery .photogallery{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.gallery .photogallery img{
+    border-radius: 10px;
+    transition: ease 1s all;
+    cursor: pointer;
+}
+.gallery .photogallery:hover img{
+    transform: scale(0);
+}
+.photogallery .contant2 h1{
+    display: none;
+}
+.photogallery:hover .contant2{
+    opacity: 1;
+    transform: scale(1) rotate(180deg);
+    transition-delay: 1s;
+}
+.clear{
+    clear: both;
+}
+.team{
+    width: 100%;
+    margin-top: 50px;
+
+}
+.team .tname{
+    width: 250px;
+    height: 300px;
+    display: inline-block;
+    margin-left: 130px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 44px;
+}
+.team .tname:hover{
+    box-shadow: 3px 5px 4px #eee;
+}
+.team .tname  img{
+    border-radius: 50%;
+    margin-top: -40px;
+    width: 140px;
+    height: 140px;
+    border: 6px solid white;
+}
+.aboutus{
+    margin-top: 30px;
+    width: 100%;
+    height: 120px;
+    text-align: center;
+}
+.aboutus .items{
+    width: 400px;
+    height: 150px;
+    display: inline-block;
+    margin-top: 20px;
+}
+.contastus{
+    height: 274px;
+}
+.contastus .address{
+    float: left;
+    margin-left: 100px;
+    margin-top: 40px;
+
+}
+iframe{
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.contastus .form{
+    float: right;
+    margin-right: 5px;
+    width: 450px;
+    height: 300px;
+    border-radius: 10%;
+}
+.contastus .form form{
+    margin-top: 30px;
+}
+.contastus .form form h2{
+    font-size: 22px;
+    margin-top: 12px;
+    margin-right: 100px;
+    margin-left: 10px;
+    color: rgb(102, 102, 102);
+    text-shadow: 2px 2px 2px  rgb(136, 136, 136);
+    float: left;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.contastus .form form input{
+    width: 240px;
+    height: 30px;
+    outline: none;
+    border-radius: 7px;
+    border: none;
+    float: right;
+    margin-top: -25px;
+    font-size: 20px;
+    margin-right: 10px;
+    color: rgb(131, 131, 131);
+}
+.contastus .form form a{
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(4, 182, 182);
+    margin-top: 20px;
+    margin-left: 45%;
+    border-radius: 10px;
+    color: rgb(94, 91, 91);
+    text-shadow: 2px 2px 2px rgb(100, 100, 100);
+    transition: ease 1s all;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.contastus .form form a:hover{
+    border: 1px solid white;
+    color: white;
+    background-color: tomato;
+}
+.fotter{
+    margin-top: 40px;
+    height: 100px;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.fotter h3{
+    text-align: center;
+}
+@media only screen and (max-width:700px)
+{   
+    .logo{
+    margin-top: 20px;
+    height: 50px;
+    margin-left: 30px;
+    float: left;
+    color: aquamarine;
+    font-family: 'Righteous', cursive;
+    }
+    .logo h1{
+    font-size: 30px;
+    background-image: conic-gradient(from -180deg at 30% 55%,rgb(255, 80, 11) 0deg,rgb(255, 80, 11) 90deg,rgb(243, 135, 47) 90deg,yellow 180deg,green 180deg,rgb(53, 196, 160) 270deg,pink 270deg,rgb(123, 191, 194) 360deg);
+    font-family: 'Righteous', cursive; 
+    background-clip: text; 
+    -webkit-background-clip: text;
+    color: transparent;
+    }
+    span{
+        display: block;
+
+    }
+    ul li{
+        display: block;
+        border: none;
+    }
+    ul{
+        display: none;
+        background-color: bisque;
+    }
+    .socialicon{
+        width: 100px;
+        float: left;
+        position: fixed;
+    }
+    .socialicon .i1{
+        font-size: 30px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    .socialicon .i1 i{
+        background-color: white;
+        padding: 12px;
+        border-radius: 50%;
+    }
+    .contant{
+        text-align: center;
+        margin: 0;
+    }
+    .contant h1{
+        color: rgb(146, 148, 147);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .contant a{
+        margin: 10px;
+    }
+    .priceing{
+        margin: 0;
+    }
+    .priceing .pri{
+        background-color: teal;
+        width: 250px;
+        height: 300px;
+        margin-left: 40px;
+        margin-top: 40px;
+        border-radius: 4px;
+        border-top-right-radius: 40px;
+        border-bottom-left-radius: 120px;
+        border-top-left-radius: 50px;
+        box-shadow: 5px 5px 5px rgb(110, 110, 110);
+    }
+    .priceing .pri1{
+        display: none;
+    }
+    .gallery{
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+    .gallery .photogallery{
+        display: inline-block;
+        margin-left: 13px;
+        margin-top: 13px;
+        position: relative;
+        overflow: hidden;
+    }
+    .gallery .photogallery img{
+        border-radius: 10px;
+        transition: ease 2s all;
+        cursor: pointer;
+    }
+    .gallery .photogallery:hover img{
+        transform: scale(0);
+        transition: ease 2s all;
+    }
+    .photogallery .contant2{
+        position: absolute;
+        border-radius: 10px;
+        background: rgb(37, 230, 236);
+        color: rgb(143, 143, 143);
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        transform: scale(1);
+        opacity: 0;
+        transition: ease 1.5s all;
+    }
+    .photogallery .contant2 h1{
+        text-align: center;
+        margin-top: 30%;
+        display: block;
+    }
+    .photogallery:hover .contant2{
+        opacity: 1;
+        transform: scale(1) rotate(180deg);
+        transition-delay: 1s;
+    }
+
+    .team .tname{
+        width: 250px;
+        height: 300px;
+        display: inline-block;
+        margin-left: 40px;
+        background-color: white;
+        border-radius: 20px;
+        margin-top: 45px;
+    }
+    .aboutus{
+        margin-top: 30px;
+        height: 350px;
+    }
+    .aboutus .items{
+        width: 100%;
+        height: 100px;
+        text-align: center;
+    }
+    .contastus{
+        height: 650px;
+        border-top: 1px dashed rgb(226, 226, 226);
+    }
+    .contastus iframe{
+        width: 400px;
+        height: 200px;
+        margin-left: 120px;
+    }
+    .contastus .address{
+        float: left;
+        margin-left: 140px;
+        margin-top: 35px;
+    }
+    .contastus .form{
+        float: right;
+        margin-right: 50px;
+        width: 450px;
+        height: 400px;
+        border-radius: 10%;
+        margin-top: -20px;
+        margin-bottom: -100px;
+    }
+    .fotter{
+        margin-top: 100px;
+        height:100px;
+    }
+    .fotter h3{
+        text-align: center;
+    }
+}
